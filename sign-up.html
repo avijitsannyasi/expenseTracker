@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v6.6.0/css/pro.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/image/favicon.png" type="image/x-icon">
+    <title>Login</title>
+</head>
+
+<body class="bg-gray-100">
+
+    <div class="login-area px-4 py-6 shadow-md bg-white rounded-md">
+        <div class="logo flex justify-center items-center">
+            <a href="#0">
+                <img src="assets/image/logo-dark.png" alt="logo">
+            </a>
+        </div>
+        <div class="login-area text-center">
+            <div class="flex flex-col mb-5">
+                <h4 class="text-xl font-bold mt-5 mb-2">SIGN UP</h4>
+                <p class="text-gray-500 text-sm">Sign up to your account to continue</p>
+            </div>
+            <form action="" class="flex flex-col gap-3 mt-5">
+                <div class="form-group flex flex-col gap-2">
+                    <label for="Name" class="text-left font-medium">Full Name</label>
+                    <input type="text" class="form-control outline px-4 py-3 rounded-md" name="email" id="email"
+                        placeholder="Enter your email">
+                </div>
+                <div class="form-group flex flex-col gap-2">
+                    <label for="email" class="text-left font-medium">Email</label>
+                    <input type="email" class="form-control outline px-4 py-3 rounded-md" name="email" id="email"
+                        placeholder="Enter your email">
+                </div>
+                <div class="form-group flex flex-col gap-2 position: relative">
+                    <label for="password" class="text-left font-medium">Password</label>
+                    <input type="password" class="form-control outline px-4 py-3 rounded-md" name="password"
+                        id="password" placeholder="Enter your password">
+                    <span class="eye-icon position: absolute top-4/6 mt-1 cursor-pointer hover:text-fuchsia-600 right-4 -translate-y-1/2"><i class="fa-solid fa-eye"></i></span>
+                </div>
+                <button type="submit"
+                    class="px-5 py-3 rounded-md button-color cursor-pointer mt-3 text-white hover:bg-fuchsia-600 transition-all duration-300">Sign Up</button>
+            </form>
+        </div>
+        <div class="flex gap-4 justify-between mt-5 items-center log-other">
+            <div class="liner border-t border-gray-500 w-full"></div>
+            <p class="text-gray-500 text-sm">Or</p>
+            <div class="liner border-t border-gray-500 w-full"></div>
+        </div>
+        <div class="flex flex-col gap-3 mt-5">
+            <div class="flex flex-col gap-3">
+                <button
+                    class="login-option cursor-pointer flex gap-2 items-center justify-center px-5 py-3 rounded-md border border-gray-500">
+                    <img src="assets/image/google-logo.png" alt="">
+                    <span class="font-medium">Continue With Google</span>
+                </button>
+                <button
+                    class="login-option cursor-pointer flex gap-2 items-center justify-center px-5 py-3 rounded-md border border-gray-500">
+                    <img src="assets/image/apple-logo.png" alt="">
+                    <span class="font-medium">Continue With Apple</span>
+                </button>
+            </div>
+            <p class="text-gray-500 text-sm text-center">Already have an account? <a href="login.html"
+                    class="font-medium theme-color">Login</a></p>
+        </div>
+    </div>
+
+</body>
+
+</html>

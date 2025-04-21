@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v6.6.0/css/pro.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/image/favicon.png" type="image/x-icon">
+    <title>Expense Tracker</title>
+</head>
+
+<body class="bg-gray-100">
+    <div class="content-area bg-white shadow-md rounded-md posttion: relative">
+
+        <div class="header-area posttion: relative rounded-b-lg">
+            <div class="flex user-info justify-between">
+                <div class="urser-side">
+                    <div class="flex gap-2 items-center">
+                        <div class="user-icon">
+                            <img src="assets/image/profile.png" alt="">
+                        </div>
+                        <div class="user-name">
+                            <h4 class="text-white text-lg font-semibold">Avijit Sannyasi</h4>
+                            <p class="text-white text-sm">avijits780@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="select-side">
+                    <select name="" id=""
+                        class="form-control outline-none custom-select border border-white text-white px-2 py-2 rounded-md">
+                        <option value="This Month">This Month</option>
+                        <option value="This Year">This Year</option>
+                        <option value="This Week">This Week</option>
+                        <option value="This Day">This Day</option>
+                    </select>
+                </div>
+            </div>
+            <div class="card-model px-6 py-4 mt-5 posttion: absolute top-16 right-0 w-full">
+                <div class="card-items shadow-xl rounded-xl p-8">
+                    <div class="card-top-area flex justify-between">
+                        <div class="left-card">
+                            <h6 class="text-white text-lg font-semibold">Total Balance <i
+                                    class="fa-solid fa-angle-up"></i></h6>
+                            <h2 class="text-white text-3xl font-semibold">₹15000</2>
+                        </div>
+                        <div class="right-card text-white text-2xl cursor-pointer">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
+                    <div class="mt-5 flex justify-between items-center">
+                        <div class="income">
+                            <h6 class="text-white text-sm">
+                                <span class="mr-1"><i class="fa-light fa-arrow-down"></i></span> Income
+                            </h6>
+                            <h2 class="text-white text-xl font-semibold">₹15000</h2>
+                        </div>
+                        <div class="expense">
+                            <h6 class="text-white text-sm">
+                                <span class="mr-1"><i class="fa-regular fa-arrow-up"></i></span>Expense
+                            </h6>
+                            <h2 class="text-white text-xl font-semibold">₹10000</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="recent-activity mt-14 mb-15 p-6">
+            <div class="flex justify-between w-full items-center">
+                <h4 class="text-xl font-semibold">Recent Activity</h4>
+                <h6
+                    class="text-sm font-semibold theme-color cursor-pointer transition-all duration-300 hover:text-fuchsia-600">
+                    VIEW ALL</h6>
+            </div>
+
+            <div class="recent-activity-list">
+                <div
+                    class="recent-activity-item mt-3 p-4 rounded-xl border border-gray-200 shadow-md flex items-center justify-between">
+                    <div class="uses-content flex items-center gap-2">
+                        <div class="icon"><i class="fa-solid fa-cart-minus"></i></div>
+                        <div class="uses">
+                            <h4 class="text-xl font-semibold">Groceries</h4>
+                            <p class="text-sm">Manually</p>
+                        </div>
+                    </div>
+                    <div class="amount">
+                        <h4 class="text-lg font-semibold">₹1000</h4>
+                        <p class="text-sm text-gray-500">06 Apr 2025</p>
+                    </div>
+                </div>
+                <div
+                    class="recent-activity-item mt-3 p-4 rounded-xl border border-gray-200 shadow-md flex items-center justify-between">
+                    <div class="uses-content flex items-center gap-2">
+                        <div class="icon"><i class="fa-solid fa-film"></i></div>
+                        <div class="uses">
+                            <h4 class="text-xl font-semibold">Entertainment</h4>
+                            <p class="text-sm">Manually</p>
+                        </div>
+                    </div>
+                    <div class="amount">
+                        <h4 class="text-lg font-semibold">₹250</h4>
+                        <p class="text-sm text-gray-500">03 Apr 2025</p>
+                    </div>
+                </div>
+                <div
+                    class="recent-activity-item mt-3 p-4 rounded-xl border border-gray-200 shadow-md flex items-center justify-between">
+                    <div class="uses-content flex items-center gap-2">
+                        <div class="icon"><i class="fa-solid fa-car"></i></div>
+                        <div class="uses">
+                            <h4 class="text-xl font-semibold">Transportation</h4>
+                            <p class="text-sm">Manually</p>
+                        </div>
+                    </div>
+                    <div class="amount">
+                        <h4 class="text-lg font-semibold">₹750</h4>
+                        <p class="text-sm text-gray-500">01 Apr 2025</p>
+                    </div>
+                </div>
+                <div
+                    class="recent-activity-item mt-3 p-4 rounded-xl border border-gray-200 shadow-md flex items-center justify-between">
+                    <div class="uses-content flex items-center gap-2">
+                        <div class="icon"><i class="fa-solid fa-cassette-betamax"></i></div>
+                        <div class="uses">
+                            <h4 class="text-xl font-semibold">Rent</h4>
+                            <p class="text-sm">Manually</p>
+                        </div>
+                    </div>
+                    <div class="amount">
+                        <h4 class="text-lg font-semibold">₹1000</h4>
+                        <p class="text-sm text-gray-500">30 Mar 2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-menu flex justify-between items-center shadow-md rounded-md px-6 py-4 posttion: fixed bottom-0 left-0 right-0 max-w-[450px] mx-auto w-full bg-white">
+            <div class="menu-list">
+                <a href="#0" class="text-2xl theme-color"><i class="fa-solid fa-house"></i></a>
+            </div>
+            <div class="menu-list">
+                <a href="#0" class="text-2xl"><i class="fa-solid fa-wallet"></i></a>
+            </div>
+            <div class="menu-list w-[48px] h-[48px] flex items-center justify-center rounded-full bg-gray-100 border border-gray-200">
+                <a href="#0" class="text-2xl"><i class="fa-solid fa-plus"></i></a>
+            </div>
+            <div class="menu-list">
+                <a href="#0" class="text-2xl"><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
+            </div>
+            <div class="menu-list">
+                <a href="#0" class="text-2xl"><i class="fa-solid fa-gear"></i></a>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

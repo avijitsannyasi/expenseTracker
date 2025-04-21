@@ -1,0 +1,96 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* login area */
+.login-area {
+    max-width: 450px;
+    margin: 16px auto;
+}
+
+.login-area .logo img {
+    height: 50px;
+}
+
+.theme-color {
+    color: #8b54a2;
+}
+
+.theme-color:hover {
+    color: #000;
+}
+
+.theme-color:focus {
+    color: #000;
+}
+
+.theme-color:active {
+    color: #000;
+}
+
+.login-option img {
+    height: 24px;
+}
+
+.button-color {
+    color: #ffffff;
+    background-color: #8b54a2;
+    ;
+}
+
+/* content area */
+.content-area {
+    max-width: 450px;
+    margin: auto;
+}
+
+.header-area {
+    background-color: #8b54a2;
+    padding: 24px;
+    height: 240px;
+}
+
+.user-icon img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.custom-select option {
+    color: black;
+    /* background-color: white; */
+}
+
+.card-items {
+    background: rgb(138 84 161 / 67%);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.recent-activity-item .icon{
+    width: 48px;
+    height: 48px;
+    background-color: #8b54a214;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #8b54a2;
+}
